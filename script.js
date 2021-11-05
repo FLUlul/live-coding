@@ -43,3 +43,25 @@ let bikes = [
 ]
 
 console.log(bikes);
+
+
+let newBike = 
+{
+    "nome": "peepo",
+    "peso": 5,
+    "brand": "pepethefrog"
+}
+
+let newBikeCopy = {...newBike, "numeroMarce": 12}
+
+bikes.push(newBikeCopy);
+
+/* for(let key in newBike){
+    console.log(key, newBike[key]);
+} */
+/* for(let key in newBikeCopy){
+    console.log(key, newBikeCopy[key]);
+} */
+console.log(newBike, newBikeCopy);
+
+console.log(bikes);
