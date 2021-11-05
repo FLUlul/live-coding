@@ -1,3 +1,13 @@
+
+let containerBikes = document.getElementById("container");
+
+/* 
+Jsnack #1:
+Creare un array di 7 oggetti:
+Ogni oggetto descriverà una bici  con le seguenti proprietà:
+nome, peso e brand.
+log in console dell’oggetto
+*/
 let bikes = [
     {
         "nome": "ultrabike",
@@ -44,7 +54,14 @@ let bikes = [
 
 console.log(bikes);
 
-
+/* 
+Jsnack #2:
+Creare un nuovo oggetto,
+crearne una copia con la proprietà “numeroMarce” aggiunta
+pushare il nuovo oggetto copia nell’array di oggetti
+log in console dell’oggetto originale + log in console dell’oggeto copia
+log in console dell’array di oggetti
+*/
 let newBike = 
 {
     "nome": "peepo",
@@ -65,3 +82,27 @@ bikes.push(newBikeCopy);
 console.log(newBike, newBikeCopy);
 
 console.log(bikes);
+
+/* 
+Jsnack #3:
+stampare a schermo l’elenco delle bici con tutte le info, principali (numero delle marce no);
+[html super base senza o con css super grezzo, l’importante che si capisca dove finisce un blocco bc e dove inizia l’altro, solo quello (quindi bastan dei margini grossolani)]
+*/
+
+for(let i=0; i<bikes.length; i++){
+    let indexBikes = bikes[i];
+
+    const {nome, peso, brand} = indexBikes;
+
+    stampaHtml(nome, peso, brand);
+}
+
+function stampaHtml(nomeBici, pesoBici, brandBici){
+    containerBikes.innerHTML += `
+    <div class="card">
+        <div class="nome-bici">${nomeBici}</div>
+        <div class="peso-bici">${pesoBici} kg</div>
+        <div class="brand-bici">${brandBici}</div>    
+    </div>
+  `
+}
