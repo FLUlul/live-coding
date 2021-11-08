@@ -16,9 +16,21 @@ let peoples = [
     },
 
     {
+        "name": "Marisa",
+        "lastName": "Franceschi",
+        "age": 11
+    },
+
+    {
+        "name": "Luca",
+        "lastName": "Gaaro",
+        "age": 17
+    },
+
+    {
         "name": "Luigi",
         "lastName": "Meroli",
-        "age": 17
+        "age": 20
     }
 ]
 
