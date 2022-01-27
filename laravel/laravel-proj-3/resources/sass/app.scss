@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+    a {
+        text-decoration: none;
+        color: blue;
+        font-size: large;
+        font-weight: 800;
+    }
+}
+
+header {
+    ul {
+        li {
+            display: inline-block;
+            margin: 0 20px;
+            color: red;
+        }
+    }
+}
+
+footer {
+    ul {
+        li {
+            display: inline-block;
+            margin: 0 20px;
+            color: green;
+        }
+    }
+}

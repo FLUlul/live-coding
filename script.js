@@ -38,7 +38,7 @@ console.log(peoples);
 
 const canDrive = peoples.map((people) => {
     if(people.age >= 18){
-        return console.log(people.name, "can drive cuz his age is:", people.age);
+        return console.log(people.name, people.lastName,  "can drive cuz his age is:", people.age);
     }
 });
 
